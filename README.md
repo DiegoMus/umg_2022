@@ -1,7 +1,8 @@
 # umg_2022 
 
-Instalar Node https://nodejs.org/es/download/
-Instalar ngrok 
+### Requerimientos:
+### Instalar Node 
+### Instalar ngrok 
 
  1. Clonar repositorio
  2. Carga el archivo las variables de lectura deben ser las que
@@ -10,6 +11,6 @@ Instalar ngrok
 node app.js  
 ~~~
 
-No olvidar que el sistema comparten puertos por esa razon se debe levantar el servicio
+No olvidar que el sistema comparten puertos por esa razon no se pueden hacer cambios durante la operación 
 
 

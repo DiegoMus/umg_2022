@@ -9,7 +9,7 @@ var SerialPort = require("serialport");
 var port = 3000;
 
 //Listar puerto serial (Windows, otros sistemas operativos)
-var arduinoCOMPort = "COM5";
+var arduinoCOMPort = "COM9";
 
 //Definir Velocidad
 var arduinoSerialPort = new SerialPort(arduinoCOMPort, {baudRate: 9600});
@@ -27,12 +27,12 @@ app.get('/', function (req, res) {
 //Ruta de acciones
 app.get('/:action', function (req, res) {
    var action = req.params.action || req.param('action');
-    if(action == 'on'){
-        arduinoSerialPort.write("o");
+    if(action == 'o'){
+        arduinoSerialPort.write("1");
         return res.send('Led Encedido');
     } 
     if(action == 'off') {
-        arduinoSerialPort.write("f");
+        arduinoSerialPort.write("0");
         return res.send("Apagar Led");
     }
     return res.send('Action: ' + action);

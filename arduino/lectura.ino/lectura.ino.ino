@@ -11,12 +11,13 @@ void loop(){
   if (Serial.available() > 0){
       valor = Serial.read();
         switch(valor){
-            case 'o' : 
+            case '1' : 
               digitalWrite(salida, HIGH);
               break;
             
             default:
-              break
+              digitalWrite(salida,LOW);
+              break;
           }
     }
 }

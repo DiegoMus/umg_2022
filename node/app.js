@@ -9,7 +9,7 @@ var SerialPort = require("serialport");
 var port = 3000;
 
 //Listar puerto serial (Windows, otros sistemas operativos)
-var arduinoCOMPort = "COM5";
+var arduinoCOMPort = "COM9";
 
 //Definir Velocidad
 var arduinoSerialPort = new SerialPort(arduinoCOMPort, {baudRate: 9600});
